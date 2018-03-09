@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <title></title>
+    <base target="_blank"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <style type="text/css">
+        /*footerTopStart*/
+        .footer {
+            height: 600px;
+        }
+
+        .footerTopBox {
+            width: 1333px;
+            width: 100%;
+            overflow: hidden;
+            background: black;
+        }
+
+        .footerTopBox .footerTopNav {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft {
+            float: left;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft i {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url("public/images/public-24-2.png") no-repeat -144px -22px;
+            margin-right: 18px;
+            vertical-align: middle;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft span {
+            vertical-align: middle;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft span.red {
+            color: #9b172f;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft span.white {
+            color: white;
+            margin-right: 5px;
+            color: #fff;
+        }
+
+        .footerTopNavRight {
+            float: right;
+            height:40px;
+            line-height: 40px;
+            color:#fff;
+        }
+        .footerTopNavRight span{
+            float:left;
+            line-height: 40px;
+            margin-right: 10px;
+        }
+        .footerTopNavRight .footerTopNavRightEmail {
+            border: 1px solid #ccc;
+            position: relative;
+            float:left;
+            line-height: 30px;
+            height:30px;
+            margin-top: 5px;
+        }
+
+        .footerTopNavRight .footerTopNavRightEmail input {
+            border: 0;
+            outline: 0;
+            width: 200px;
+            height:26px;
+            /*line-height: 26px;*/
+            background: black;
+            margin-left:5px;
+            padding:0px
+            /*position:relative;*/
+            /*z-index: 1;*/
+        }
+
+        .footerTopNavRight .footerTopNavRightEmail span {
+            position:absolute;
+            left:5px;
+            top:0px;
+            line-height: 30px;
+            /*z-index: 0;*/
+        }
+        .footerTopNavRight .footerTopNavRightEmail i{
+            width:22px;
+            height:18px;
+            line-height: 30px;
+            float:right;
+            margin:4px 5px;
+            background: url("public/images/public-24.png") no-repeat -133px 0;
+        }
+        /*footerTopEnd*/
+    </style>
+</head>
+<body>
+<div class="footer">
+    <div class="footerTopBox">
+        <div class="footerTopNav clearfix">
+            <div class="footerTopNavLeft">
+                <i></i>
+                <span class="red">400-617-9999</span>
+                <span class="white">客服热线</span>
+                <span class="white">9:00-23:00</span>
+                <span class="white">贴心服务</span>
+            </div>
+            <div class="footerTopNavRight">
+                <span>优惠促销早知道</span>
+                <div class="footerTopNavRightEmail">
+                    <input type="email">
+                    <span class="emailSpan">请输入您的邮箱地址</span>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+        <div class="footerTopService"></div>
+    </div>
+    <div class="footerBottom"></div>
+</div>
+<script>
+    var footerTopNavRightEmail=document.getElementsByClassName("footerTopNavRightEmail")[0];
+    var footerTopNavRightEmailInput=footerTopNavRightEmail.getElementsByTagName("input")[0];
+    var emailSpan=document.getElementsByClassName("emailSpan")[0];
+    footerTopNavRightEmailInput.onclick=emailSpan.onclick=function(){
+        // footerTopNavRightEmailInput.onclick=true;
+        emailSpan.style.display="none";
+    }
+    footerTopNavRightEmailInput.onblur=emailSpan.onblur=function(){
+        emailSpan.style.display="block";
+    }
+</script>
+</body>
+</html>

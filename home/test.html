@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>无缝滚动——左右</title>
+    <link rel="stylesheet" href="public/bs/css/bootstrap.min.css">
+    <script src="public/js/jquery-3.2.1.min.js"></script>
+    <script src="public/bs/js/bootstrap.js"></script>
+    <script src="public/js/startMove.js"></script>
+    <style type="text/css">
+        body {
+            position: relative;
+        }
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        h3{
+            margin:0px;
+        }
+        #navbar-example{
+            position:fixed;
+            top:150px;
+            left:10px;
+        }
+        span{
+            position:fixed;
+            top:200px;
+        }
+    </style>
+</head>
+<body>
+<!--<div style="height:800px;width:800px;background:yellow"></div>-->
+<div id="navbar-example" class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li><a href="#ios" class="active">ios</a></li>
+        <li><a href="#shouji">shouji</a></li>
+        <li><a href="#diannao">diannao</a></li>
+    </ul>
+</div>
+<div data-spy="scroll"  data-target="#navbar-example" data-offset="15" style="height:100px; overflow:hidden;overflow-y: scroll;">
+    <h3 id="ios">
+        ios
+    </h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur distinctio eos fuga,
+        inventore iusto magnam necessitatibus, officia perferendis possimus quisquam sint soluta, ut velit vero
+        voluptas voluptatem? Aspernatur, placeat.
+        voluptas voluptatem? Aspernatur, placeat.
+        voluptas voluptatem? Aspernatur, placeat.
+        voluptas voluptatem? Aspernatur, placeat.
+        voluptas voluptatem? Aspernatur, placeat.
+    </div>
+    <h3 id="shouji">
+        shouji
+    </h3>
+    <div>Ab, explicabo facilis molestias nam quae ratione sint suscipit voluptas. A amet blanditiis consequuntur
+        cupiditate earum itaque iusto laboriosam mollitia natus, nobis officia quo reiciendis rem soluta unde vel
+        vero.
+    </div>
+    <h3 id="diannao">
+        diannao
+    </h3>
+    <div>Ab, explicabo facilis molestias nam quae ratione sint suscipit voluptas. A amet blanditiis consequuntur
+        cupiditate earum itaque iusto laboriosam mollitia natus, nobis officia quo reiciendis rem soluta unde vel
+        vero.
+    </div>
+    <span id="activeitem" style="color:red;"></span>
+</div>
+<script>
+    $(function(){
+//        removeSection = function(e) {
+//            $(e).parents(".section").remove();
+//            $('[data-spy="scroll"]').each(function () {
+//                var $spy = $(this).scrollspy('refresh')
+//            });
+//        }
+        $("#navbar-example").scrollspy();
+        $('#navbar-example').on('activate.bs.scrollspy', function () {
+            var currentItem = $(".nav li.active > a").text();
+            $("#activeitem").html("目前您正在查看 - " + currentItem);
+
+            $("#diannao").css({"background":"red"});
+        })
+    });
+</script>
+</body>
+</html>

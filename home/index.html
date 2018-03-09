@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒仙网首页</title>
+    <link href="../public/bs/css/bootstrap.css" rel="stylesheet">
+    <link href="public/css/index.css" rel="stylesheet">
+    <link href="public/css/animate.css" rel="stylesheet">
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+    <script src="../public/bs/js/bootstrap.min.js"></script>
+    <script src="../public/js/holder.js"></script>
+    <script src="public/js/startMove.js"></script>
+    <script src="public/js/index.js"></script>
+    <style>
+        .baiJiuProductImg {
+            float: left;
+            width: 988px;
+        }
+
+        .baiJiuProductImg div {
+
+        }
+
+        .baiJiuProductImg p.baiJiuBrand {
+            overflow: hidden;
+            height: 36px;
+            line-height: 20px;
+            margin-bottom: 4px;
+        }
+
+        .baiJiuProductImg ul {
+            font-size: 0px;
+            border-top: 2px solid red;
+            width: 980px;
+        }
+
+        .baiJiuProductImg ul li {
+            padding-top: 10px;
+            border-bottom: 1px solid #dadada;
+            /*border-left:1px solid #8c8c8c;*/
+            border-right: 1px solid #dadada;
+            /*white-space: nowrap;*/
+            width: 196px;
+            height: 242px;
+            font-size: 12px;
+            list-style: none;
+            display: inline-block;
+            text-align: center;
+            /*-webkit-box-sizing: border-box;*/
+        }
+
+        .baiJiuProductImg ul li p.baiJiuPrice {
+            text-align: left;
+            padding-left: 18px;
+            font-size: 12px;
+            overflow: hidden;
+        }
+
+        .baiJiuProductImg ul li p.baiJiuPrice strong {
+            vertical-align: middle;
+        }
+
+        .baiJiuProductImg ul li p.baiJiuPrice em {
+            font-style: normal;
+            vertical-align: middle;
+        }
+
+        .baiJiuProductImg ul li p.baiJiuPrice i {
+            height: 14px;
+            width: 40px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url("public/images/club.png") no-repeat;
+        }
+
+        .baiJiuProductTwo {
+            width: 1198px;
+            height: 162px;
+        }
+
+        .baiJiuPromotion {
+            width: 210px;
+            height: 162px;
+            padding: 5px 20px;
+            background: #ccc;
+            float: left;
+        }
+
+        .baiJiuPromotion li {
+            list-style: none;
+        }
+
+        .baiJiuPromotion h3 {
+            color: red;
+            font-size: 14px;
+        }
+
+        .baiJiuPromotion h3 i {
+            width: 3px;
+            height: 3px;
+            display: inline-block;
+            background: red;
+            vertical-align: middle;
+        }
+
+        .baiJiuPromotion h3 span {
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .baiJiuPromotion ul li p {
+            padding: 0px;
+            margin: 0px;
+            font-size: 12px;
+        }
+
+        .baiJiuPromotion ul li p span {
+            /*padding:0 4px 0 0;*/
+            float: left;
+            /*padding-right:4px;*/
+            display: inline-block;
+            width: 48px;
+            height: 18px;
+            line-height: 15px;
+            font-size: 12px;
+        }
+
+        /*白酒本周畅销区start*/
+        .baiJiuHotSale {
+            width: 980px;
+            height: 162px;
+            float: left;
+            border-right: 1px solid #dadada;
+            border-bottom: 1px solid #dadada;
+            position: relative;
+        }
+
+        .baiJiuHotSaleNavTitle {
+            float: left;
+        }
+
+        .baiJiuHotSaleNavTitle i {
+            display: inline-block;
+            width: 12px;
+            height: 14px;
+            background: url("public/images/newIndexIcon-24.png") no-repeat -38px 0;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .baiJiuHotSaleNavTitle span {
+            vertical-align: middle;
+        }
+
+        .baiJiuHotSaleNavList {
+            float: right;
+        }
+
+        .baiJiuHotSaleNavList ul {
+            list-style: none;
+            font-size: 0;
+        }
+
+        .baiJiuHotSaleNavList ul li {
+            display: inline-block;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .baiJiuHotSaleNavList ul li:first-child {
+            color: red;
+        }
+
+        .baiJiuHotSaleProduct {
+            position: relative;
+        }
+
+        .baiJiuHotSaleProduct ul {
+            font-size: 0px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: none;
+        }
+
+        .baiJiuHotSaleProduct ul:first-child {
+            display: block;
+        }
+
+        .baiJiuHotSaleProduct ul li {
+            width: 195px;
+            height: 121px;
+            list-style: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+        .baiJiuHotSaleProduct ul li .baiJiuHotSaleProductImg {
+            float: left;
+        }
+
+        .baiJiuHotSaleProduct ul li .baiJiuHotSaleProductPrice {
+            float: left;
+            width: 80px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .baiJiuHotSaleProduct ul li .baiJiuHotSaleProductPrice a {
+            display: block;
+            text-align: left;
+            height: 36px;
+            width: 80px;
+            color: black;
+            text-decoration: none;
+            overflow: hidden;
+            word-break: break-all;
+            /*white-space: nowrap;*/
+        }
+
+        .baiJiuHotSaleProduct ul li .baiJiuHotSaleProductPrice a:hover {
+            text-decoration: blink;
+            color: red;
+        }
+
+        .baiJiuHotSaleProduct ul li .baiJiuHotSaleProductPrice p span {
+            color: red;
+            font-size: 18px;
+            padding-top: 20px;
+        }
+
+        /*白酒本周畅销区end*/
+        /*楼层悬浮start*/
+        .fixDiv {
+            height: 800px;
+            width: 200px;
+            position: fixed;
+            left: 20px;
+            top: 300px;
+            /*z-index: 999;*/
+            /*display: none;*/
+        }
+
+        .fixDiv .floorOne, .fixDiv .floorTwo, .fixDiv .floorThree {
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            /*z-index:1000;*/
+        }
+
+        .fixDiv .floorOne .floorOneOn, .fixDiv .floorTwo .floorTwoOn, .fixDiv .floorThree .floorThreeOn {
+            display: block;
+            width: 28px;
+            height: 29px;
+            border-radius: 15px;
+            background: #d43d4e;
+            text-align: center;
+            /*vertical-align: middle;*/
+            line-height: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            display: none;
+            color: #fff;
+        }
+
+        .fixDiv .floorOne .floorOneBg, .fixDiv .floorTwo .floorTwoBg, .fixDiv .floorThree .floorThreeBg {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background: #dadada;
+            vertical-align: middle;
+            border-radius: 50%;
+            line-height: 30px;
+        }
+
+        .fixDiv i {
+            display: inline-block;
+            width: 12px;
+            height: 20px;
+            line-height: 20px;
+            vertical-align: middle;
+            border-radius: 15px;
+            background: url("public/images/newIndexIcon-24.png") no-repeat;
+        }
+
+        .fixDiv .floorOne .floorOneBg i {
+            background-position: 0 -181px;
+        }
+
+        .fixDiv .floorTwo .floorTwoBg i {
+            width: 8px;
+            height: 21px;
+            background-position: -18px -180px;
+        }
+
+        .fixDiv .floorThree .floorThreeBg i {
+            width: 20px;
+            height: 20px;
+            background-position: -31px -181px;
+        }
+
+        /*楼层悬浮end*/
+        /*logo墙start*/
+        .logoWall {
+            position: relative;
+            width: 1200px;
+            /*height: 300px;*/
+        }
+
+        .logoWall .titleBox ul {
+            list-style: none;
+            display: block;
+            font-size: 0px;
+            margin-top: 20px;
+            background-color: #fff;
+            text-align: center;
+            float: left;
+        }
+
+        .logoWall .titleBox ul li {
+            float: left;
+            display: inline-block;
+            font-size: 16px;
+            width: 90px;
+            margin-right: 15px;
+            text-align: center;
+            line-height: 42px;
+        }
+
+        .logoWall .titleSlider {
+            position: absolute;
+            top: 40px;
+            width: 90px;
+            border-bottom: 3px solid red;
+            text-align: center;
+        }
+
+        .logoWall .titleSlider b {
+            font-size: 0px;
+            height: 0px;
+            width: 0px;
+            border-top: transparent 10px solid;
+            border-left: transparent 10px solid;
+            border-right: transparent 10px solid;
+            border-bottom: red 10px solid;
+            margin-top: -10px;
+            vertical-align: bottom;
+            display: inline-block;
+        }
+
+        .logoBox {
+            width: 1200px;
+            height: 200px;
+            /*text-align: center;*/
+            position: relative;
+            top: 0px;
+            padding: 15px 0px 15px 15px;
+            border: solid 1px #ccc;
+            overflow: hidden;
+        }
+
+        .logoBox .logoBoxBtn {
+            /*position:relative;*/
+            /*z-index:1;*/
+        }
+
+        .logoBox .logoBoxBtn i {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 113px;
+        }
+
+        .logoBox .logoBoxBtn i.logoBoxBtnLeft {
+            position: absolute;
+            background: url("public/images/newIndexIcon-24.png") no-repeat 0 -130px;
+            left: 8px;
+            /*z-index:1;*/
+        }
+
+        .logoBox .logoBoxBtn i.logoBoxBtnRight {
+            position: absolute;
+            background: url("public/images/newIndexIcon-24.png") no-repeat -56px -130px;
+            right: 8px;
+        }
+
+        .logoWall .logoBox .logoWallImg {
+            width: 12000px;
+        }
+
+        .logoWall .logoBox .logoWallImg {
+            /*position: absolute;*/
+            /*top:0;*/
+            /*left:0;*/
+            /*z-index: 1;*/
+            /*width:12000px;*/
+            /*margin-left:10px;*/
+            float: left;
+        }
+
+        .logoWall .logoBox .logoWallImg ul {
+            width: 1166px;
+            list-style: none;
+            margin-right: 20px;
+
+        }
+
+        .logoWall .logoBox .logoWallImg ul li {
+            display: inline-block;
+            margin: 0 13px 13px 0px;
+            width: 180px;
+            height: 80px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logoWall .logoBox .logoWallImg ul li img {
+            width: 280px;
+            height: 90px;
+        }
+
+        .logoWall .logoBox .logoWallImg ul li:last-child {
+            margin: 0 0px 13px 0px;
+        }
+
+        .logoWall .logoBox .logoWallImg ul li:nth-last-child(7) {
+            margin: 0 0px 13px 0px;
+        }
+
+        .logoWall .logoBox .logoWallImgFirst ul {
+            float: left;
+            /*margin-left: 10px;*/
+        }
+
+        .logoWall .logoBox .logoWallImg:first-child {
+            /*display:none;*/
+        }
+
+        /*logo墙end*/
+        /*品牌精品店start*/
+        .brandBoutique {
+            width: 1200px;
+            margin-top: 10px;
+            /*height:500px;*/
+        }
+
+        .brandBoutiqueNav {
+
+        }
+
+        .brandBoutiqueNavLeft {
+            float: left;
+        }
+
+        .brandBoutiqueNavLeft i {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background: yellow;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .brandBoutiqueNavLeft span {
+            vertical-align: middle;
+            font-size: 18px;
+        }
+
+        .brandBoutiqueContent {
+            width: 1200px;
+            background: #fff;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            padding: 5px 5px 0 5px;
+        }
+
+        .brandBoutiqueContentItem {
+            /*width:580px;*/
+            /*float:left;*/
+            /*margin-right:10px;*/
+        }
+
+        .brandBoutiqueContentItem ul {
+            list-style: none;
+            font-size: 0px;
+        }
+
+        .brandBoutiqueContentItem ul li {
+            float: left;
+            font-size: 14px;
+            margin-right: 10px;
+            width: 580px;
+        }
+
+        .brandBoutiqueContentItem ul li img {
+            /*display: inline-block;*/
+            /*width:*/
+            /*background: url("public/images/brandBoutique1.jpg") no-repeat;*/
+            float: left;
+            vertical-align: middle;
+        }
+
+        .brandBoutiqueContentItem ul li .brandBoutiqueGoods {
+            float: left;
+            vertical-align: middle;
+            margin: 5px 0 0 0;
+        }
+
+        .brandBoutiqueContentItem ul li p {
+            /*margin-left:3px;*/
+            /*float:left;*/
+        }
+
+        .brandBoutiqueContentItem ul li p a {
+            margin: 0 8px;
+            color: #aaa;
+            /*float:left;*/
+        }
+
+        /*品牌精品店end*/
+        /*footerTopStart*/
+        .footer {
+            height: 700px;
+            /*background: black;*/
+        }
+
+        .footerTopBox {
+            width: 1333px;
+            width: 100%;
+            overflow: hidden;
+            background: black;
+        }
+
+        .footerTopBox .footerTopNav {
+            width: 1200px;
+            height: 60px;
+            margin: 20px auto;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft {
+            float: left;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft i {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url("public/images/public-24-2.png") no-repeat -144px -22px;
+            margin-right: 18px;
+            vertical-align: middle;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft span {
+            vertical-align: middle;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft span.red {
+            color: #9b172f;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .footerTopBox .footerTopNav .footerTopNavLeft span.white {
+            color: white;
+            margin-right: 5px;
+            color: #fff;
+        }
+
+        .footerTopNavRight {
+            float: right;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+        }
+
+        .footerTopNavRight span {
+            float: left;
+            line-height: 40px;
+            margin-right: 10px;
+        }
+
+        .footerTopNavRight .footerTopNavRightEmail {
+            border: 1px solid #ccc;
+            position: relative;
+            float: left;
+            line-height: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
+
+        .footerTopNavRight .footerTopNavRightEmail input {
+            border: 0;
+            outline: 0;
+            width: 200px;
+            height: 26px;
+            line-height: 26px;
+            background: black;
+            margin-left: 5px;
+            /*position:relative;*/
+            /*z-index: 1;*/
+        }
+
+        .footerTopNavRight .footerTopNavRightEmail span {
+            position: absolute;
+            left: 5px;
+            top: 0px;
+            line-height: 30px;
+            /*z-index: 0;*/
+        }
+
+        .footerTopNavRight .footerTopNavRightEmail i {
+            width: 22px;
+            height: 18px;
+            line-height: 30px;
+            float: right;
+            margin: 4px 5px;
+            background: url("public/images/public-24.png") no-repeat -133px 0;
+        }
+
+        .footerTopService {
+            width: 1200px;
+            margin: 0px auto;
+        }
+
+        .footerTopService ul li {
+            list-style: none;
+            width: 150px;
+            margin: 20px 10px 30px 0px;
+            text-align: center;
+            color: #fff;
+            float: left;
+        }
+
+        .footerTopService ul li.blog h3 {
+            font-size: 14px;
+        }
+
+        .footerTopService ul li h3 {
+            font-size: 18px;
+        }
+
+        .footerTopService ul li h3 i {
+            background: url("public/images/public-24.png") no-repeat 0 -131px;
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .footerTopService ul li h3 span {
+            vertical-align: middle;
+        }
+
+        .footerTopService ul li a {
+            color: #fff;
+        }
+
+        /*footerTopEnd*/
+        /*footerBottomStart*/
+        .footerBottomBox {
+            width: 100%;
+            overflow: hidden;
+            display: block;
+
+        }
+
+        .footerBottomBoxWrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footerBottomBox .footerBottomBoxLeft {
+            width: 60%;
+            margin: 10px 0 0 0;
+            float: left;
+        }
+
+        .footerBottomBox .footerBottomBoxRight {
+            width: 40%;
+            padding: 20px 0 0 10px;
+            float: left;
+        }
+
+        .footerBottomBox .footerBottomBoxRight img {
+            /*margin-right: 10px;*/
+        }
+
+        .footerBottomBox .footerBottomBoxRight div {
+            float: left;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .footerBottomBoxLeftTop {
+            margin-bottom: 30px;
+        }
+
+        .footerBottomBoxLeftTop a, .footerBottomBoxLeftTop span {
+            color: #ccc;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        .footerBottomBoxLeftBottomImg a {
+            margin-right: 5px;
+        }
+
+        .footerPro {
+            color: darkred;
+        }
+
+        /*footerBottomEnd*/
+        /*右边栏start*/
+        .rightSidebar {
+            width: 35px;
+            height: 100%;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            background: yellow;
+        }
+        .rightSidebarTop{
+            margin-top:100px;
+            text-align: center;
+        }
+        .rightSidebarTop i{
+            display: inline-block;
+            width:19px;
+            height:19px;
+            background: url("public/images/public-24.png") no-repeat 0 -164px;
+        }
+        .cat{
+            width:19px;
+            margin-left: 8px;
+        }
+        /*右边栏end*/
+    </style>
+</head>
+<body>
+<div class="top clearfix">
+    <div class="main clearfix">
+        <div class="left">
+            <span>欢迎来到酒仙网!</span>
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+        </div>
+        <div class="right">
+            <div class="myjiuxian">
+                <div class="a clearfix">
+                    <a>我的酒仙</a>
+                    <i class="myjiu"></i>
+                </div>
+                <div class="mydropdown">
+                    <ul>
+                        <li><a href="">我的订单</a>
+                            <a href="">物流跟踪</a>
+                            <a href="">我的优惠券</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="" class="fontRed">CEO邮箱</a>
+            <a href=""><i class="cart"></i>购物车<span class="fontRed">0</span>件</a>
+            <a href="">Club会员</a>
+            <a href="">招商入驻</a>
+            <a href="" class="fontRed shouji"><i class="bg"></i>手机逛酒仙</a>
+            <a href=""><i class="daohang"></i>网站导航</a>
+            <a href="">客户服务</a>
+            <span href="">客服热线</span>
+            <span class="fontRed">400-617-9999</span>
+        </div>
+    </div>
+</div>
+<div class="banner clearfix">
+    <a href="#"></a>
+</div>
+<div class="header clearfix">
+    <div class="main">
+        <div class="logo">
+            <a><img src="public/images/logo.png" alt=""></a>
+        </div>
+        <div class="adv">
+            <a><img src="public/images/adv.gif" alt=""></a>
+        </div>
+        <div class="search">
+            <div class="search-top">
+                <form action="" class="info clearfix" target="_self">
+                    <input type="text" placeholder="满459元送茅台">
+                    <button>搜 索</button>
+                </form>
+            </div>
+            <div class="search-bottom">
+                <a href="">茅台 |</a>
+                <a href="">拉菲 |</a>
+                <a href="">红酒 |</a>
+                <a href="">剑兰春 |</a>
+            </div>
+        </div>
+        <div class="youhui">
+            <img src="public/images/youhui.png">
+        </div>
+    </div>
+</div>
+<div class="navWrap">
+    <div class="nav clearfix">
+        <div class="fenlei clearfix">
+            <!--左侧-->
+            <h4>全部商品分类</h4>
+            <ul class="left">
+                <li calss="catItem" id="catItem1">
+                    <div class="catItemCon">
+                        <h5><i class="icon1"></i><a href="">一键选酒</a></h5>
+                        <div class="catSmallCon">
+                            <p><a>整箱购</a> <a>整箱购</a> <a>箱购</a></p>
+                            <p><a>整箱购</a> <a>整箱购</a> <a>箱购</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li calss="catItem">
+                    <div class="catItemCon">
+                        <h5><i></i><a href="">一键选酒</a></h5>
+                        <div class="catSmallCon">
+                            <p>整箱购 整箱购 整箱购</p>
+                            <p>整箱购 整箱购 整箱购</p>
+                        </div>
+                    </div>
+                </li>
+                <li calss="catItem">
+                    <div class="catItemCon">
+                        <h5><i></i><a href="">一键选酒</a></h5>
+                        <div class="catSmallCon">
+                            <p>整箱购 整箱购 整箱购</p>
+                            <p>整箱购 整箱购 整箱购</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--右侧-->
+            <div class="menubox clearfix">
+                <!--右侧文字start-->
+                <div class="text clearfix">
+                    <div class="menuItem clearfix">
+                        <div class="title clearfix"><h5>特色会场</h5></div>
+                        <div class="content ">
+                            <p class="clearfix">
+                                <a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a>
+                            </p>
+                        </div>
+                        <div class="title clearfix"><h5>特色会场</h5></div>
+                        <div class="content ">
+                            <p class="clearfix">
+                                <a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a>
+                            </p>
+                        </div>
+                        <div class="title clearfix"><h5>特色会场</h5></div>
+                        <div class="content ">
+                            <p class="clearfix">
+                                <a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a>
+                            </p>
+                        </div>
+                        <div class="title clearfix"><h5>特色会场</h5></div>
+                        <div class="content ">
+                            <p class="clearfix">
+                                <a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a><a>整箱购</a>
+                            </p>
+                        </div>
+                        <div class="menuHeight">
+                            <div class="title"></div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧文字end-->
+                <!--右侧广告位start-->
+                <div class="adv">
+                    <a><img src="public/images/yijiangoujiu.jpg"></a>
+                </div>
+                <!--右侧广告位end-->
+            </div>
+        </div>
+        <ul class="navList clearfix">
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+            <li><a class="channel">首页</a></li>
+        </ul>
+        <div class="nav-promotion">
+            <a><img src="public/images/hongjiu.gif"></a>
+        </div>
+    </div>
+</div>
+<div class="homeMainBody clearfix">
+    <!--轮播start-->
+    <div class="mainBanner">
+        <div class="lgImg">
+            <ul class="bigUl">
+                <li class="li1">
+                    <div class="ban_center">
+                        <a class="focusArea" href="../admin.html" target="_blank"></a>
+                        <div class="mav">
+                            <a class="smImg a1" href=""><img src="./public/images/banS1.png"></a>
+                            <a class="smImg a2" href=""><img src="./public/images/banS2.png"></a>
+                            <a class="smImg a3" href=""><img src="./public/images/banS3.png"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="li2">
+                    <div class="ban_center">
+                        <a class="focusArea" href="../admin.html" target="_blank"></a>
+                        <div class="mav">
+                            <a class="smImg a1" href=""><img src="./public/images/banS4.png"></a>
+                            <a class="smImg a2" href=""><img src="./public/images/banS5.png"></a>
+                            <a class="smImg a3" href=""><img src="./public/images/banS6.png"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="li3">
+                    <div class="ban_center">
+                        <a class="focusArea" href="../admin.html" target="_blank"></a>
+                        <div class="mav">
+                            <a class="smImg a1" href=""><img src="./public/images/banS7.png"></a>
+                            <a class="smImg a2" href=""><img src="./public/images/banS8.png"></a>
+                            <a class="smImg a3" href=""><img src="./public/images/banS9.png"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="li4">
+                    <div class="ban_center">
+                        <a class="focusArea" href="../admin.html" target="_blank"></a>
+                        <div class="mav">
+                            <a class="smImg a1" href=""><img src="./public/images/banS7.png"></a>
+                            <a class="smImg a2" href=""><img src="./public/images/banS8.png"></a>
+                            <a class="smImg a3" href=""><img src="./public/images/banS9.png"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="smBtn">
+            <ul class="smUl clearfix">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+            </ul>
+        </div>
+    </div>
+    <!--轮播end-->
+    <div class="mainWrap">
+        <div class="mainBox">
+            <!--两侧背景图start-->
+            <div class="bgLeft">
+                <a target="_blank" href="#"
+                   style="background: url('public/images/mainBoxLeft.png') no-repeat right top"></a>
+            </div>
+            <div class="bgRight">
+                <a target="_blank" href="#"
+                   style="background:url('public/images/mainBoxRight.png') no-repeat left top"></a>
+            </div>
+            <!--两侧背景图end-->
+            <!--疯狂抢购start-->
+            <div class="contentFirst clearfix">
+                <div class="indexTabBox">
+                    <div class="nav">
+                        <ul class="navU clearfix">
+                            <li class="n1">疯狂抢购</li>
+                            <li class="n2">整箱特惠</li>
+                            <li class="n3">爆款精选</li>
+                            <li class="n4">口粮聚会</li>
+                            <li class="n5">大牌特卖</li>
+                        </ul>
+                    </div>
+                    <div class="intro">
+                        <div class="introItem" id="introItemOne">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox1.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox1.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox1.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox1.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox1.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox1.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="introItem" id="introItemTwo">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox2.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox2.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox2.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox2.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox2.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox2.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="introItem" id="introItemThree">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox3.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox3.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox3.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox3.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox3.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox3.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="introItem" id="introItemFour">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox4.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox4.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox4.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox4.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox4.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox4.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="introItem" id="introItemFive">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox5.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox5.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox5.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox5.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox5.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><a href="#" title="jjjjjsjjsj"><img
+                                                src="public/images/indexTabBox5.jpg"></a></div>
+                                        <div class="imgIntro"><a href="#" title="dddddd">【超级秒杀日】53°汾酒集团青瓷一坛香1500ml</a>
+                                        </div>
+                                        <div class="imgIntro"><strong>￥39.00</strong></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="indexTabRight">
+                    <!--广告信息部分start-->
+                    <div class="indexTabNew">
+                        <div class="indexTabNewNav">
+                            <ul class="indexTabNewNavItem">
+                                <li class="info1">公告信息</li>
+                                <li class="info2">促销信息</li>
+                            </ul>
+                        </div>
+                        <div class="indexTabNewBox">
+                            <div class="indexTabNewBoxItem">
+                                <div class="a1">
+                                    <a>12月21日董酒特卖ddfsdsffds</a>
+                                    <a>12</a>
+                                    <a>12</a>
+                                </div>
+                                <div class="a2">
+                                    <a>12月21日董酒特卖dssfssfssfs</a>
+                                    <a>12月21日董酒特卖</a>
+                                    <a>12月21日董酒特卖</a>
+                                </div>
+                            </div>
+                            <div class="indexTabNewBoxItem">
+                                <div>
+                                    <a>180000红包任你抢eeee</a>
+                                    <a>12</a>
+                                    <a>12</a>
+                                </div>
+                                <div>
+                                    <a>12月21日董酒特卖dssfssfssfs</a>
+                                    <a>12月21日董酒特卖</a>
+                                    <a>12月21日董酒特卖</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--广告信息部分end-->
+                    <!--广告图片部分start-->
+                    <div class="indexTabAdOne">
+                        <div class="indexTabAdImg">
+                            <div class="indexTabAdImgItem"><img src="public/images/ad1.jpg"></div>
+                            <div class="indexTabAdImgItem"><img src="public/images/ad2.png"></div>
+                            <div class="indexTabAdImgItem"><img src="public/images/ad3.jpg"></div>
+                        </div>
+                        <div class="indexTabAdOneBtn">
+                            <ul class="indexTabAdOneBtnUl">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="indexTabAdTwo">
+                        <div class="indexTabAdTwoImg">
+                            <div class="indexTabAdTwoImgItem"><img src="public/images/ad4.jpg"></div>
+                            <div class="indexTabAdTwoImgItem"><img src="public/images/ad5.jpg"></div>
+                            <div class="indexTabAdTwoImgItem"><img src="public/images/ad6.jpg"></div>
+                        </div>
+                        <div class="indexTabAdTwoBtn">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--广告图片部分end-->
+                </div>
+            </div>
+            <!--疯狂抢购end-->
+            <!--悬浮层一层start-->
+            <div class="loadFirst">
+                <div id="indexLayer1">
+                    <div class="adBox clearfix">
+                        <div>
+                            <a>
+                                <img src="public/images/adbox1.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <img src="public/images/adbox2.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a>
+                                <img src="public/images/adbox3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="timeLimit">
+                        <div class="timeLimitNav clearfix">
+                            <div class="title">
+                                <i></i>
+                                <span>优惠推荐</span>
+                            </div>
+                            <div class="page">
+                                <ul>
+                                    <li class="pageItemA"></li>
+                                    <li class="pageItemA"></li>
+                                    <li class="pageItemA"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeLimitList">
+                            <i class="raceLeft"></i>
+                            <i class="raceRight"></i>
+                            <div class="timeLimitListWrap">
+                                <div class="timeLimitListWrapItem">
+                                    <ul class="clearfix">
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit1.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p class="timeLimitSetInterval">剩余：<span class="hour">00</span>小时<span
+                                                    class="minute">00</span>分钟<span class="second">00</span>秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit1.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p class="timeLimitSetInterval">剩余：<span class="hour">00</span>小时<span
+                                                    class="minute">00</span>分钟<span class="second">00</span>秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit1.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p class="timeLimitSetInterval">剩余：<span class="hour">00</span>小时<span
+                                                    class="minute">00</span>分钟<span class="second">00</span>秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit1.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p class="timeLimitSetInterval">剩余：<span class="hour">00</span>小时<span
+                                                    class="minute">00</span>分钟<span class="second">00</span>秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit1.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p class="timeLimitSetInterval">剩余：<span class="hour">00</span>小时<span
+                                                    class="minute">00</span>分钟<span class="second">00</span>秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit1.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p class="timeLimitSetInterval">剩余：<span class="hour">00</span>小时<span
+                                                    class="minute">00</span>分钟<span class="second">00</span>秒</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="timeLimitListWrapItem">
+                                    <ul class="clearfix">
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit2.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p>剩余47小时32分钟58秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit2.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p>剩余47小时32分钟58秒</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="timeLimitListWrapItem">
+                                    <ul class="clearfix">
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit3.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p>剩余47小时32分钟58秒</p>
+                                        </li>
+                                        <li class="timeLimitListImg">
+                                            <div><a href="#"><img src="public/images/timelimit3.jpg"></a></div>
+                                            <p>45°古井大曲250ml（6瓶装）jjdjjdjdj</p>
+                                            <p class="price"><span>￥</span><span>45.00</span></p>
+                                            <p>剩余47小时32分钟58秒</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baiJiu" id="floorOne">
+                        <div class="baiJiuNav clearfix">
+                            <div class="baiJiuNavLeft">
+                                <i>1F</i>
+                                <span>白酒馆</span>
+                            </div>
+                            <div class="baiJiuNavRight">
+                                <a href="index.html">贵州</a>
+                                <span>|</span>
+                                <a>北京</a>
+                                <span>|</span>
+                                <a>四川</a>
+                                <span>|</span>
+                                <a>山西</a>
+                                <a>白酒馆<span>></span></a>
+                            </div>
+                        </div>
+                        <div class="baiJiuProduct clearfix">
+                            <div class="baiJiuProductOne clearfix">
+                                <div class="baiJiuProductPptWrap">
+                                    <div class="baiJiuProductPpt">
+                                        <ul class="clearfix">
+                                            <li><img src="public/images/baijiu1.jpg"></li>
+                                            <li><img src="public/images/baijiu2.jpg"></li>
+                                            <li><img src="public/images/baijiu3.jpg"></li>
+                                            <li><img src="public/images/baijiu1.jpg"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="baiJiuProductPptBtn">
+                                        <ul class="clearfix">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="baiJiuProductImg"><ul>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div><img src="public/images/baijiu4.jpg"></div>
+                                        <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                        </p>
+                                        <p class="baiJiuPrice">
+                                            <strong>￥148.00</strong>
+                                            <em>￥145.00</em>
+                                            <i></i>
+                                        </p>
+                                    </li>
+                                </ul></div>
+                            </div>
+                            </div>
+                            <div class="baiJiuProductTwo">
+                                <div class="baiJiuPromotion">
+                                    <ul class="">
+                                        <li class="clearfix">
+                                            <h3>
+                                                <i></i>
+                                                <span>热门推荐</span>
+                                            </h3>
+                                            <p><span>整箱购</span><span>婚庆用酒</span><span>大坛专场</span></p>
+                                        </li>
+                                        <li class="clearfix">
+                                            <h3>
+                                                <i></i>
+                                                <span>美酒品牌</span>
+                                            </h3>
+                                            <p class="clearfix"><span>茅台</span><span>五粮液</span><span>剑南春</span></p>
+                                            <p class="clearfix"><span>郎酒</span><span>汾酒</span><span>泸州老窖</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="baiJiuHotSale clearfix">
+                                    <div class="baiJiuHotSaleNav clearfix">
+                                        <div class="baiJiuHotSaleNavTitle">
+                                            <i></i>
+                                            <span>本周热销</span>
+                                        </div>
+                                        <div class="baiJiuHotSaleNavList">
+                                            <ul class="clearfix baiJiuHotSaleNavListUl">
+                                                <li id="jiangXiang">酱香型</li>
+                                                <li><span>|</span></li>
+                                                <li id="nongXiang">浓香型</li>
+                                                <li><span>|</span></li>
+                                                <li id="qingXiang">清香型</li>
+                                                <li><span>|</span></li>
+                                                <li>其他型</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="baiJiuHotSaleProduct ">
+                                        <ul class="clearfiX jiangXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="clearfiX nongXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="clearfiX qingXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baiJiu" id="floorTwo">
+                        <div class="baiJiuNav clearfix">
+                            <div class="baiJiuNavLeft">
+                                <i>2F</i>
+                                <span>葡萄酒馆</span>
+                            </div>
+                            <div class="baiJiuNavRight">
+                                <a href="index.html">贵州</a>
+                                <span>|</span>
+                                <a>北京</a>
+                                <span>|</span>
+                                <a>四川</a>
+                                <span>|</span>
+                                <a>山西</a>
+                                <a>白酒馆<span>></span></a>
+                            </div>
+                        </div>
+                        <div class="baiJiuProduct clearfix">
+                            <div class="baiJiuProductOne clearfix">
+                                <div class="baiJiuProductPptWrap">
+                                    <div class="baiJiuProductPpt">
+                                        <ul class="clearfix">
+                                            <li><img src="public/images/baijiu1.jpg"></li>
+                                            <li><img src="public/images/baijiu2.jpg"></li>
+                                            <li><img src="public/images/baijiu3.jpg"></li>
+                                            <li><img src="public/images/baijiu1.jpg"></li>
+                                            <li><img src="public/images/baijiu2.jpg"></li>
+                                            <li><img src="public/images/baijiu3.jpg"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="baiJiuProductPptBtn">
+                                        <ul class="clearfix">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="baiJiuProductImg">
+                                    <ul>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="baiJiuProductTwo">
+                                <div class="baiJiuPromotion">
+                                    <ul class="">
+                                        <li class="clearfix">
+                                            <h3>
+                                                <i></i>
+                                                <span>热门推荐</span>
+                                            </h3>
+                                            <p><span>整箱购</span><span>婚庆用酒</span><span>大坛专场</span></p>
+                                        </li>
+                                        <li class="clearfix">
+                                            <h3>
+                                                <i></i>
+                                                <span>美酒品牌</span>
+                                            </h3>
+                                            <p class="clearfix"><span>茅台</span><span>五粮液</span><span>剑南春</span></p>
+                                            <p class="clearfix"><span>郎酒</span><span>汾酒</span><span>泸州老窖</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="baiJiuHotSale clearfix">
+                                    <div class="baiJiuHotSaleNav clearfix">
+                                        <div class="baiJiuHotSaleNavTitle">
+                                            <i></i>
+                                            <span>本周热销</span>
+                                        </div>
+                                        <div class="baiJiuHotSaleNavList">
+                                            <ul class="clearfix baiJiuHotSaleNavListUl">
+                                                <li id="jiangXiang">酱香型</li>
+                                                <li><span>|</span></li>
+                                                <li id="nongXiang">浓香型</li>
+                                                <li><span>|</span></li>
+                                                <li id="qingXiang">清香型</li>
+                                                <li><span>|</span></li>
+                                                <li>其他型</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="baiJiuHotSaleProduct ">
+                                        <ul class="clearfiX jiangXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="clearfiX nongXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="clearfiX qingXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baiJiu" id="floorThree">
+                        <div class="baiJiuNav clearfix">
+                            <div class="baiJiuNavLeft">
+                                <i>3F</i>
+                                <span>洋酒馆</span>
+                            </div>
+                            <div class="baiJiuNavRight">
+                                <a href="index.html">贵州</a>
+                                <span>|</span>
+                                <a>北京</a>
+                                <span>|</span>
+                                <a>四川</a>
+                                <span>|</span>
+                                <a>山西</a>
+                                <a>白酒馆<span>></span></a>
+                            </div>
+                        </div>
+                        <div class="baiJiuProduct clearfix">
+                            <div class="baiJiuProductOne clearfix">
+                                <div class="baiJiuProductPptWrap">
+                                    <div class="baiJiuProductPpt">
+                                        <ul class="clearfix">
+                                            <li><img src="public/images/baijiu1.jpg"></li>
+                                            <li><img src="public/images/baijiu2.jpg"></li>
+                                            <li><img src="public/images/baijiu3.jpg"></li>
+                                            <li><img src="public/images/baijiu1.jpg"></li>
+                                            <li><img src="public/images/baijiu2.jpg"></li>
+                                            <li><img src="public/images/baijiu3.jpg"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="baiJiuProductPptBtn">
+                                        <ul class="clearfix">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="baiJiuProductImg">
+                                    <ul>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div><img src="public/images/baijiu4.jpg"></div>
+                                            <p class="baiJiuBrand"><a title="【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白">【老酒组合套装】50°银西凤酒500ml（2010年）+52°太白</a>
+                                            </p>
+                                            <p class="baiJiuPrice">
+                                                <strong>￥148.00</strong>
+                                                <em>￥145.00</em>
+                                                <i></i>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="baiJiuProductTwo">
+                                <div class="baiJiuPromotion">
+                                    <ul class="">
+                                        <li class="clearfix">
+                                            <h3>
+                                                <i></i>
+                                                <span>热门推荐</span>
+                                            </h3>
+                                            <p><span>整箱购</span><span>婚庆用酒</span><span>大坛专场</span></p>
+                                        </li>
+                                        <li class="clearfix">
+                                            <h3>
+                                                <i></i>
+                                                <span>美酒品牌</span>
+                                            </h3>
+                                            <p class="clearfix"><span>茅台</span><span>五粮液</span><span>剑南春</span></p>
+                                            <p class="clearfix"><span>郎酒</span><span>汾酒</span><span>泸州老窖</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="baiJiuHotSale clearfix">
+                                    <div class="baiJiuHotSaleNav clearfix">
+                                        <div class="baiJiuHotSaleNavTitle">
+                                            <i></i>
+                                            <span>本周热销</span>
+                                        </div>
+                                        <div class="baiJiuHotSaleNavList">
+                                            <ul class="clearfix baiJiuHotSaleNavListUl">
+                                                <li id="jiangXiang">酱香型</li>
+                                                <li><span>|</span></li>
+                                                <li id="nongXiang">浓香型</li>
+                                                <li><span>|</span></li>
+                                                <li id="qingXiang">清香型</li>
+                                                <li><span>|</span></li>
+                                                <li>其他型</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="baiJiuHotSaleProduct ">
+                                        <ul class="clearfiX jiangXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu7.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="clearfiX nongXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu8.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="clearfiX qingXiang">
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="baiJiuHotSaleProductImg">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒"><img src="public/images/baijiu9.jpg"></a>
+                                                </div>
+                                                <div class="baiJiuHotSaleProductPrice">
+                                                    <a title="茅台飞天500ml十年红花郎茅台王子酒">
+                                                        茅台飞天500ml十年红花郎茅台王子酒
+                                                    </a>
+                                                    <p><span>￥189</span></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--悬浮层一层end-->
+            <!--楼层悬浮start-->
+            <div class="fixDiv">
+                <div class="floorOne floorWrap">
+                    <a class="floorOneOn floorItemOn" href="#floorOne">1F</a>
+                    <a class="floorOneBg floorItemBg" href="#floorOne"><i></i></a>
+                </div>
+                <div class="floorTwo floorWrap">
+                    <a class="floorTwoOn  floorItemOn" href="#floorTwo">2F</a>
+                    <a class="floorTwoBg floorItemBg" href="#floorTwo"><i></i></a>
+                </div>
+                <div class="floorThree floorWrap">
+                    <a class="floorThreeOn  floorItemOn" href="#floorThree">3F</a>
+                    <a class="floorThreeBg floorItemBg" href="#floorThree"><i></i></a>
+                </div>
+            </div>
+            <!--楼层悬浮end-->
+            <!--logo墙start-->
+            <div class="logoWall clearfix">
+                <div class="titleBox clearfix">
+                    <ul class="titleBoxWrap">
+                        <li>官方推荐</li>
+                        <li>地方名品</li>
+                        <li>明星店铺</li>
+                        <li>进口红洋酒</li>
+                        <li>品牌红洋酒</li>
+                        <li>啤酒食品</li>
+                    </ul>
+                </div>
+                <div class="titleSlider clearfix">
+                    <b></b>
+                </div>
+                <div class="logoBox clearfix">
+                    <div class="logoWallImg logoWallImgFirst">
+                        <div class="logoWallImgWrap">
+                            <ul class="logoWallImgWrapUl">
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                            </ul>
+                            <ul>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                            </ul>
+                            <ul>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall2.jpg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoWallImg ">
+                        <div class="logoWallImgWrap">
+                            <ul>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall1.jpg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoWallImg ">
+                        <div class="logoWallImgWrap">
+                            <ul>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall3.jpg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoWallImg ">
+                        <div class="logoWallImgWrap">
+                            <ul>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall4.jpg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoWallImg ">
+                        <div class="logoWallImgWrap">
+                            <ul>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                                <li><a><img src="public/images/logoWall5.jpg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoBoxBtn clearfix">
+                        <i class="logoBoxBtnLeft"></i>
+                        <i class="logoBoxBtnRight"></i>
+                    </div>
+                </div>
+            </div>
+            <!--logo墙end-->
+            <!--品牌精品店start-->
+            <div class="brandBoutique clearfix">
+                <div class="brandBoutiqueNav clearfix">
+                    <div class="brandBoutiqueNavLeft">
+                        <i></i>
+                        <span>品牌精品店</span>
+                    </div>
+                </div>
+                <div class="brandBoutiqueContent clearfix">
+                    <div class="brandBoutiqueContentItem">
+                        <ul>
+                            <li>
+                                <img class="brandBoutiqueImg" src="public/images/brandBoutique1.jpg">
+                                <div class="brandBoutiqueGoods">
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="brandBoutiqueImg" src="public/images/brandBoutique1.jpg">
+                                <div class="brandBoutiqueGoods">
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="brandBoutiqueImg" src="public/images/brandBoutique1.jpg">
+                                <div class="brandBoutiqueGoods">
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="brandBoutiqueImg" src="public/images/brandBoutique1.jpg">
+                                <div class="brandBoutiqueGoods">
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">原味老窖</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">茅台集团国龙</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a><span>|</span>
+                                        <a href="#" title="兰益松">兰益松</a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--品牌精品店end-->
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footerTopBox">
+        <div class="footerTopNav clearfix">
+            <div class="footerTopNavLeft">
+                <i></i>
+                <span class="red">400-617-9999</span>
+                <span class="white">客服热线</span>
+                <span class="white">9:00-23:00</span>
+                <span class="white">贴心服务</span>
+            </div>
+            <div class="footerTopNavRight">
+                <span>优惠促销早知道</span>
+                <div class="footerTopNavRightEmail">
+                    <input type="email">
+                    <span class="emailSpan">请输入您的邮箱地址</span>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+        <div class="footerTopService">
+            <ul class="clearfix">
+                <li>
+                    <h3>
+                        <i></i>
+                        <span>新手入门</span>
+                    </h3>
+                    <p><a>购物保障</a></p>
+                    <p><a>发票说明</a></p>
+                    <p><a>服务协议</a></p>
+                </li>
+                <li>
+                    <h3>
+                        <i></i>
+                        <span>新手入门</span>
+                    </h3>
+                    <p><a>购物保障</a></p>
+                    <p><a>发票说明</a></p>
+                    <p><a>服务协议</a></p>
+                </li>
+                <li>
+                    <h3>
+                        <i></i>
+                        <span>新手入门</span>
+                    </h3>
+                    <p><a>购物保障</a></p>
+                    <p><a>发票说明</a></p>
+                    <p><a>服务协议</a></p>
+                </li>
+                <li>
+                    <h3>
+                        <i></i>
+                        <span>新手入门</span>
+                    </h3>
+                    <p><a>购物保障</a></p>
+                    <p><a>发票说明</a></p>
+                    <p><a>服务协议</a></p>
+                </li>
+                <li>
+                    <h3>
+                        <i></i>
+                        <span>新手入门</span>
+                    </h3>
+                    <p><a>购物保障</a></p>
+                    <p><a>发票说明</a></p>
+                    <p><a>服务协议</a></p>
+                </li>
+                <li class="blog">
+                    <h3>
+                        <i></i>
+                        <span>新浪微博</span>
+                    </h3>
+                    <h3>
+                        <i></i>
+                        <span>酒仙微信</span>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerBottomBox">
+        <div class="footerBottomBoxWrap clearfix">
+            <div class="footerBottomBoxLeft">
+                <div class="footerBottomBoxLeftTop">
+                    <p class="footerInfo">
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                    </p>
+                    <p>北京酒仙网络科技有限公司&nbsp;©&nbsp;&nbsp;酒仙网&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jiuxian.com
+                        All Rights Reserved 京ICP备17043395号 京公网安备1101050188221</p>
+                </div>
+                <div class="footerBottomBoxLeftBottom">
+                    <p>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                        <a href="">公司简介</a><span>|</span>
+                    </p>
+                    <p>统一社会信用代码 91110302306646672B 食品流通许可证编号 JY11131010328793 </p>
+                    <p>地址：北京市北京经济技术开发区经海五路58号院8幢4层</p>
+                    <p class="footerBottomBoxLeftBottomImg">
+                        <a href="#"><img src="http://rr.knet.cn/static/images/logo/cnnic.png" alt="可信网站"></a>
+                        <a href="#"><img src="http://rr.knet.cn/static/images/logo/cnnic.png"></a>
+                        <a href="#"><img src="http://rr.knet.cn/static/images/logo/cnnic.png"></a>
+                        <a href="#"><img src="http://rr.knet.cn/static/images/logo/cnnic.png"></a>
+                    </p>
+                    <p class="footerPro">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+                </div>
+            </div>
+            <div class="footerBottomBoxRight clearfix">
+                <div>
+                    <p>
+                        <img src="public/images/footer1.jpg">
+                    </p>
+                    <p>手机酒仙网</p>
+                </div>
+                <div>
+                    <p>
+                        <img src="public/images/footer2.jpg">
+                    </p>
+                    <p>手机酒仙网</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rightSidebar">
+    <div class="rightSidebarTop">
+        <div class="userInfo">
+            <i></i>
+            <p>我</p>
+        </div>
+        <div class="userInfo">
+            <i></i>
+            <p>收藏</p>
+        </div>
+        <div class="userInfo">
+            <i></i>
+            <p class="cat">购物车</p>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

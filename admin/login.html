@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link href="../public/bs/css/bootstrap.css" rel="stylesheet">
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+    <script src="../public/bs/js/bootstrap.min.js"></script>
+    <script src="../public/js/holder.js"></script>
+    <style>
+        body{
+            background:#ccc;
+        }
+        .login {
+            width: 500px;
+            height: 300px;
+            /*background: #ccc;*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -150px;
+        }
+        .panel-title{
+            text-align: center;
+        }
+        .ok{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class=" panel panel-primary login">
+    <div class="panel-heading">
+        <div class="panel-title">
+           <img src="../public/images/logo.png">
+        </div>
+    </div>
+    <div class="panel-body">
+        <!--method:post 不携带任何数据-->
+        <form action="index.html" method="post">
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon ">
+                        <span class="glyphicon  glyphicon-user"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="用户名">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span  class="input-group-addon" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                    </span>
+                    <!--<span class="input-group-addon  glyphicon glyphicon-hand-right"></span>-->
+                    <input type="text" class="form-control" placeholder="密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox">十天内免登录
+            </div>
+            <div class="form-group ok">
+                <input type="submit" class="btn btn-primary" value="登录">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
